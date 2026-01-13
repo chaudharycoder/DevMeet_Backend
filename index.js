@@ -37,7 +37,7 @@ const httpServer = createServer(app);
 // origin: allows requests from vite's default ports
 const io = new Server(httpServer, {
     cors: {
-        origin: "*", // In production, you might want to restrict this to your specific frontend URL
+        origin: "https://devmeet-six.vercel.app/", // In production, you might want to restrict this to your specific frontend URL
         methods: ["GET", "POST"]
     }
 });
